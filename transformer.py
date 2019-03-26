@@ -50,7 +50,7 @@ import os
 os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin'
 class Transformer:
     def creat_model(wordindex,wordindex1,matrix0,maxlen0,X_train, X_test, y_train, y_test):
-        embedding_layer0 = Embedding(len(wordindex) + len(wordindex1) + 2, 256, weights=[matrix0], input_length=maxlen0)
+        embedding_layer0 = Embedding(len(wordindex) + 1, 256, weights=[matrix0], input_length=maxlen0)
         main_input0 = Input(shape=(maxlen0,))
         embed = embedding_layer0(main_input0)
         print("embed", K.int_shape(embed))
