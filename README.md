@@ -19,8 +19,8 @@
 ![图3 Transformer](https://github.com/yanhan19940405/Transformer/blob/master/image/model.png)
 
 原理：1.分类场景下，通过Transformer Encoder作为动态词向量提取器+softmax作为文本分类baseline，进行微调即可。
-  
-      2.序列生成场景：将transformer Encoder作为序列隐藏状态层（state）生成器即可，decoder结构没有固定，可以随自身需求定义
+
+     2.序列生成场景,将transformer Encoder作为序列隐藏状态层（state）生成器即可，decoder结构没有固定，可以随自身需求定义。
       
 参数说明：在Transformer类中，creat_model方法为模型创建方法。其中maxlen0表示文本长度，wordindex代表词典索引数目，matrix代表词向量
 
