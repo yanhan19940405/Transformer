@@ -11,7 +11,7 @@
 
 ![图2 code](https://github.com/yanhan19940405/Self_Attention/blob/master/image/12.png)
 
-在8万条情感分析数据场景下，网络结构为cnn+ATT。学习率设置为0.01时，自身复现的att训练过程达成收敛，分类结果好于单独CNN网络，结果展示如下：
+在8万条情感分析数据场景下，网络结构为cnn+ATT。学习率设置为0.001时，自身复现的att训练过程达成收敛，分类结果好于单独CNN网络，结果展示如下：
 
 ![图4 code](https://github.com/yanhan19940405/Transformer/blob/master/image/fin.png)
 
