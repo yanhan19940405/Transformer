@@ -58,7 +58,7 @@ def pos_matrix(maxlen: int, d_emb: int) -> np.array:
     pos_enc[1:, 1::2] = np.cos(pos_enc[1:, 1::2])
     return pos_enc
 class Transformer:
-    def creat_model(wordindex,matrix0,maxlen0,X_train, X_test, y_train, y_test,d_model):
+    def creat_model(self,wordindex,matrix0,maxlen0,X_train, X_test, y_train, y_test,d_model):
         embedding_layer0 = Embedding(len(wordindex)+ 1, d_model, weights=[matrix0], input_length=maxlen0)
         main_input0 = Input(shape=(maxlen0,))
         embed = embedding_layer0(main_input0)
